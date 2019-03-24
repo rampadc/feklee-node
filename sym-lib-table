@@ -1,4 +1,3 @@
 (sym_lib_table
-  (lib (name SparkFun-Sensors)(type Legacy)(uri ${KIPRJMOD}/SparkFun-Sensors.lib)(options "")(descr ""))
-  (lib (name top-hemi-rescue)(type Legacy)(uri ${KIPRJMOD}/top-hemi-rescue.lib)(options "")(descr ""))
+  (lib (name node)(type Legacy)(uri ${KIPRJMOD}/node.lib)(options "")(descr ""))
 )
