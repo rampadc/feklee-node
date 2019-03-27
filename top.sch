@@ -315,14 +315,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C9566B1
-P 1250 4600
+P 1250 4650
 AR Path="/5C9566B1" Ref="#PWR?"  Part="1" 
 AR Path="/5C920754/5C9566B1" Ref="#PWR01"  Part="1" 
-F 0 "#PWR01" H 1250 4350 50  0001 C CNN
-F 1 "GND" H 1255 4427 50  0000 C CNN
-F 2 "" H 1250 4600 50  0001 C CNN
-F 3 "" H 1250 4600 50  0001 C CNN
-	1    1250 4600
+F 0 "#PWR01" H 1250 4400 50  0001 C CNN
+F 1 "GND" H 1255 4477 50  0000 C CNN
+F 2 "" H 1250 4650 50  0001 C CNN
+F 3 "" H 1250 4650 50  0001 C CNN
+	1    1250 4650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -336,19 +336,6 @@ F 1 "+5V" H 2865 2573 50  0000 C CNN
 F 2 "" H 2850 2400 50  0001 C CNN
 F 3 "" H 2850 2400 50  0001 C CNN
 	1    2850 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C9566C3
-P 1950 4600
-AR Path="/5C9566C3" Ref="#PWR?"  Part="1" 
-AR Path="/5C920754/5C9566C3" Ref="#PWR05"  Part="1" 
-F 0 "#PWR05" H 1950 4350 50  0001 C CNN
-F 1 "GND" H 1955 4427 50  0000 C CNN
-F 2 "" H 1950 4600 50  0001 C CNN
-F 3 "" H 1950 4600 50  0001 C CNN
-	1    1950 4600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -622,29 +609,10 @@ F 3 "http://www.tag-connect.com/TC2030-MCP-NL" H 2826 6636 50  0001 C CNN
 	1    2826 6636
 	1    0    0    -1  
 $EndComp
-Text HLabel 4000 6950 0    50   UnSpc ~ 0
-GNDT
 Text HLabel 4000 6550 0    50   UnSpc ~ 0
 BATT-BOT
-Text Label 3276 1142 0    50   ~ 0
+Text Label 3600 1150 0    50   ~ 0
 VIN
-$Comp
-L Diode:BAT54CW D?
-U 1 1 5C995166
-P 3076 1142
-AR Path="/5C995166" Ref="D?"  Part="1" 
-AR Path="/5C920754/5C995166" Ref="D1"  Part="1" 
-F 0 "D1" V 3122 1229 50  0000 L CNN
-F 1 "BAT54CW" V 3031 1229 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 3151 1267 50  0001 L CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf" H 2996 1142 50  0001 C CNN
-F 4 "BAT54C-7-F" H 2026 -1108 50  0001 C CNN "MPN"
-F 5 "BAT54C-7-F" H 2026 -1108 50  0001 C CNN "SKU"
-F 6 "Shenzhen" H 2026 -1108 50  0001 C CNN "OPL"
-F 7 "20" H 2026 -1108 50  0001 C CNN "Min Quantity"
-	1    3076 1142
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C99C622
@@ -679,8 +647,9 @@ AR Path="/5C99C62E" Ref="J?"  Part="1"
 AR Path="/5C920754/5C99C62E" Ref="J5"  Part="1" 
 F 0 "J5" H 5080 1242 50  0000 L CNN
 F 1 "Port_2" H 5080 1151 50  0000 L CNN
-F 2 "node:port" H 5000 1250 50  0001 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical" H 5000 1250 50  0001 C CNN
 F 3 "~" H 5000 1250 50  0001 C CNN
+F 4 "0530470210" H 5000 1250 50  0001 C CNN "MPN"
 	1    5000 1250
 	1    0    0    -1  
 $EndComp
@@ -692,12 +661,13 @@ AR Path="/5C99C634" Ref="J?"  Part="1"
 AR Path="/5C920754/5C99C634" Ref="J4"  Part="1" 
 F 0 "J4" H 5080 792 50  0000 L CNN
 F 1 "Port_1" H 5080 701 50  0000 L CNN
-F 2 "node:port" H 5000 800 50  0001 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical" H 5000 800 50  0001 C CNN
 F 3 "~" H 5000 800 50  0001 C CNN
+F 4 "0530470210" H 5000 800 50  0001 C CNN "MPN"
 	1    5000 800 
 	1    0    0    -1  
 $EndComp
-Text Label 3076 842  2    50   ~ 0
+Text Label 3075 775  2    50   ~ 0
 BATT
 Text Label 4500 800  0    50   ~ 0
 BNC-1
@@ -855,10 +825,6 @@ F 3 "" H 4100 6950 50  0001 C CNN
 $EndComp
 Text Label 1298 6478 0    50   ~ 0
 +5V_EXT
-Text Label 2976 1442 2    50   ~ 0
-+5V_EXT
-Wire Wire Line
-	2976 1442 3076 1442
 Text Label 2626 6936 2    50   ~ 0
 +5V_EXT
 Text HLabel 4000 6650 0    50   Input ~ 0
@@ -868,27 +834,22 @@ BNC-4
 $Comp
 L Device:Battery_Cell BT?
 U 1 1 5CA04C70
-P 1382 1102
+P 1450 1100
 AR Path="/5CA04C70" Ref="BT?"  Part="1" 
 AR Path="/5C920CA4/5CA04C70" Ref="BT?"  Part="1" 
 AR Path="/5C920754/5CA04C70" Ref="BT1"  Part="1" 
-F 0 "BT1" H 1500 1198 50  0000 L CNN
-F 1 "CR2032" H 1500 1107 50  0000 L CNN
-F 2 "gsg-modules:BK-912" V 1382 1162 50  0001 C CNN
-F 3 "http://www.memoryprotectiondevices.com/datasheets/BK-912-datasheet.pdf" V 1382 1162 50  0001 C CNN
-F 4 "BK-912" H 382 -198 50  0001 C CNN "MPN"
-F 5 "1" H 382 -198 50  0001 C CNN "Min Quantity"
-	1    1382 1102
+F 0 "BT1" H 1568 1196 50  0000 L CNN
+F 1 "CR2032" H 1568 1105 50  0000 L CNN
+F 2 "gsg-modules:BK-912" V 1450 1160 50  0001 C CNN
+F 3 "http://www.memoryprotectiondevices.com/datasheets/BK-912-datasheet.pdf" V 1450 1160 50  0001 C CNN
+F 4 "1" H 450 -200 50  0001 C CNN "Min Quantity"
+	1    1450 1100
 	1    0    0    -1  
 $EndComp
-Text Label 982  902  0    50   ~ 0
+Text Label 950  900  0    50   ~ 0
 BATT
-Text Label 982  1202 0    50   ~ 0
+Text Label 950  1200 0    50   ~ 0
 BATT-BOT
-Wire Wire Line
-	982  902  1382 902 
-Wire Wire Line
-	1382 1202 982  1202
 Text Label 4100 6550 0    50   ~ 0
 BATT-BOT
 Text Label 4100 6750 0    50   ~ 0
@@ -898,11 +859,11 @@ BNC-3
 Text Label 9500 1600 0    50   ~ 0
 Z-ACCEL
 Text Label 10275 4500 0    50   ~ 0
-DOUT-BOT
+DOUT
 Text Label 4100 6850 0    50   ~ 0
 DOUT-BOT
 Text HLabel 4000 6850 0    50   Output ~ 0
-DOUT-BOT
+DOUT
 Wire Wire Line
 	4000 6950 4100 6950
 Wire Wire Line
@@ -947,7 +908,7 @@ F 7 "1" H 0   0   50  0001 C CNN "Min Quantity"
 	1    0    0    -1  
 $EndComp
 Text HLabel 4000 6450 0    50   Output ~ 0
-5VOUT
++5V
 Wire Wire Line
 	4000 6450 4550 6450
 Connection ~ 4550 6450
@@ -957,7 +918,7 @@ U 1 1 5CA5B90D
 P 998 6678
 F 0 "J1" H 1055 7145 50  0000 C CNN
 F 1 "USB_B_Mini" H 1055 7054 50  0000 C CNN
-F 2 "Connector_USB:USB_Mini-B_Lumberg_2486_01_Horizontal" H 1148 6628 50  0001 C CNN
+F 2 "node:USB_Mini-B" H 1148 6628 50  0001 C CNN
 F 3 "http://www.hqchip.com/uploads/goods/201712/1513300237267023233.pdf" H 1148 6628 50  0001 C CNN
 F 4 "U-M-M5SS-W-2	" H -852 1728 50  0001 C CNN "MPN"
 F 5 "U-M-M5SS-W-2	" H -852 1728 50  0001 C CNN "SKU"
@@ -986,16 +947,6 @@ Wire Wire Line
 Connection ~ 998  7078
 NoConn ~ 9050 1400
 NoConn ~ 9050 1500
-Wire Wire Line
-	8050 1300 8050 1400
-Wire Wire Line
-	8050 1500 8050 1400
-Connection ~ 8050 1400
-Wire Wire Line
-	8050 1700 8050 1800
-Connection ~ 8050 1800
-Wire Wire Line
-	8050 1800 8050 2000
 Text Notes 7795 2413 0    50   ~ 0
 See EVAL-ADXL337Z eval board / UG-242
 Wire Notes Line
@@ -1021,18 +972,6 @@ Wire Wire Line
 	9050 1900 9050 1800
 Wire Notes Line
 	7750 2300 9500 2300
-$Comp
-L SparkFun-Sensors:ADXL337 U4
-U 1 1 5C9C6311
-P 8550 1600
-F 0 "U4" H 8550 2160 45  0000 C CNN
-F 1 "ADXL337" H 8550 2076 45  0000 C CNN
-F 2 "Package_CSP:LFCSP-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm" H 8550 2000 20  0001 C CNN
-F 3 "" H 8550 1600 60  0001 C CNN
-F 4 "IC-12011" H 8550 1981 60  0000 C CNN "Field4"
-	1    8550 1600
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5C9FFE1D
@@ -1071,16 +1010,16 @@ Wire Wire Line
 Text Notes 1375 3375 0    50   ~ 0
 See LP2985-N datasheet ([0.01uF \ncapacitor on BP]  may be omitted\nif application is not noise critical)
 Connection ~ 2850 2400
-Text Notes 1250 5250 0    50   ~ 0
+Text Notes 1250 5300 0    50   ~ 0
 See XC6204/XC6205 datasheet\n("Please wire the input capacitor (CIN)\nand the output capacitor (CL) as close\nto the IC as possible.")
 Wire Notes Line
-	1200 4900 2800 4900
+	1200 4950 2800 4950
 Wire Notes Line
-	2800 4900 2800 5300
+	2800 4950 2800 5350
 Wire Notes Line
-	2800 5300 1200 5300
+	2800 5350 1200 5350
 Wire Notes Line
-	1200 5300 1200 4900
+	1200 5350 1200 4950
 $Comp
 L Device:C_Small C?
 U 1 1 5C956699
@@ -1117,18 +1056,18 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5C9566AB
-P 2725 4600
+P 2725 4650
 AR Path="/5C9566AB" Ref="#PWR?"  Part="1" 
 AR Path="/5C920754/5C9566AB" Ref="#PWR010"  Part="1" 
-F 0 "#PWR010" H 2725 4350 50  0001 C CNN
-F 1 "GND" H 2730 4427 50  0000 C CNN
-F 2 "" H 2725 4600 50  0001 C CNN
-F 3 "" H 2725 4600 50  0001 C CNN
-	1    2725 4600
+F 0 "#PWR010" H 2725 4400 50  0001 C CNN
+F 1 "GND" H 2730 4477 50  0000 C CNN
+F 2 "" H 2725 4650 50  0001 C CNN
+F 3 "" H 2725 4650 50  0001 C CNN
+	1    2725 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2725 4600 2725 4475
+	2725 4650 2725 4475
 Wire Wire Line
 	2725 4100 2725 4125
 Wire Wire Line
@@ -1137,25 +1076,6 @@ Connection ~ 2725 4125
 Wire Wire Line
 	2725 4125 2725 4275
 NoConn ~ 2350 4325
-Wire Wire Line
-	1950 4600 1950 4575
-$Comp
-L OPL_Integrated_Circuit:PMIC-LDO-XC6204B332MR_SOT23-5_ U?
-U 1 1 5C956673
-P 1950 4225
-AR Path="/5C956673" Ref="U?"  Part="1" 
-AR Path="/5C920754/5C956673" Ref="U1"  Part="1" 
-F 0 "U1" H 1950 4579 45  0000 C CNN
-F 1 "PMIC-LDO-XC6204B332MR_SOT23-5_" H 1950 4495 45  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1950 4225 50  0001 C CNN
-F 3 "" H 1950 4225 50  0001 C CNN
-F 4 "XC6204B332MR" H 1980 4375 20  0001 C CNN "MPN"
-F 5 "310030046" H 1980 4375 20  0001 C CNN "SKU"
-F 6 "Seeed" H -300 2025 50  0001 C CNN "OPL"
-F 7 "1" H -300 2025 50  0001 C CNN "Min Quantity"
-	1    1950 4225
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1550 4125 1475 4125
 Wire Wire Line
@@ -1168,7 +1088,7 @@ Connection ~ 1475 4125
 Wire Wire Line
 	1475 4125 1250 4125
 Wire Wire Line
-	1250 4475 1250 4600
+	1250 4475 1250 4650
 Text Label 1250 4125 0    50   ~ 0
 VIN
 NoConn ~ 2300 2500
@@ -1204,4 +1124,111 @@ F 3 "http://www.world-semi.com/DownLoadFile/135" H 9500 4125 50  0001 L TNN
 $EndComp
 Wire Wire Line
 	9700 4500 10275 4500
+$Comp
+L power:GND #PWR?
+U 1 1 5C9566C3
+P 1950 4650
+AR Path="/5C9566C3" Ref="#PWR?"  Part="1" 
+AR Path="/5C920754/5C9566C3" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 1950 4400 50  0001 C CNN
+F 1 "GND" H 1955 4477 50  0000 C CNN
+F 2 "" H 1950 4650 50  0001 C CNN
+F 3 "" H 1950 4650 50  0001 C CNN
+	1    1950 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4650 1950 4575
+Wire Wire Line
+	8050 1800 8050 2000
+Wire Wire Line
+	8050 1700 8050 1800
+Connection ~ 8050 1800
+Wire Wire Line
+	8050 1500 8050 1400
+Wire Wire Line
+	8050 1300 8050 1400
+Connection ~ 8050 1400
+NoConn ~ 5200 2600
+NoConn ~ 5200 3400
+NoConn ~ 5200 3500
+NoConn ~ 5200 3600
+NoConn ~ 5200 3700
+NoConn ~ 5200 3800
+NoConn ~ 5200 4600
+NoConn ~ 5200 4700
+NoConn ~ 5200 4800
+NoConn ~ 4000 2600
+NoConn ~ 4000 2700
+Text HLabel 4000 6950 0    50   UnSpc ~ 0
+GND
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5CA115EA
+P 3425 1125
+F 0 "#FLG0103" H 3425 1200 50  0001 C CNN
+F 1 "PWR_FLAG" H 3425 1298 50  0000 C CNN
+F 2 "" H 3425 1125 50  0001 C CNN
+F 3 "~" H 3425 1125 50  0001 C CNN
+	1    3425 1125
+	1    0    0    -1  
+$EndComp
+Text Label 2925 1450 2    50   ~ 0
++5V_EXT
+Wire Wire Line
+	3075 1450 2925 1450
+Wire Wire Line
+	3275 1150 3425 1150
+Wire Wire Line
+	3425 1125 3425 1150
+Connection ~ 3425 1150
+Wire Wire Line
+	3425 1150 3600 1150
+$Comp
+L Diode:BAT54CW D?
+U 1 1 5C995166
+P 3075 1150
+AR Path="/5C995166" Ref="D?"  Part="1" 
+AR Path="/5C920754/5C995166" Ref="D1"  Part="1" 
+F 0 "D1" V 3121 1237 50  0000 L CNN
+F 1 "BAT54CW" V 3030 1237 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 3150 1275 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf" H 2995 1150 50  0001 C CNN
+F 4 "BAT54C-7-F" H 2025 -1100 50  0001 C CNN "MPN"
+F 5 "BAT54C-7-F" H 2025 -1100 50  0001 C CNN "SKU"
+F 6 "Shenzhen" H 2025 -1100 50  0001 C CNN "OPL"
+F 7 "20" H 2025 -1100 50  0001 C CNN "Min Quantity"
+	1    3075 1150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3075 850  3075 775 
+Wire Wire Line
+	950  900  1450 900 
+Wire Wire Line
+	1450 1200 950  1200
+$Comp
+L node:ADXL337 U4
+U 1 1 5CA5DC36
+P 8550 1600
+F 0 "U4" H 8550 2054 45  0000 C CNN
+F 1 "ADXL337" H 8550 1970 45  0000 C CNN
+F 2 "Package_CSP:LFCSP-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm" H 8550 2000 20  0001 C CNN
+F 3 "" H 8550 1600 60  0001 C CNN
+	1    8550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L node:PMIC-LDO-XC6204B332MR_SOT23-5 U1
+U 1 1 5CA60CA4
+P 1950 4225
+F 0 "U1" H 1950 4579 45  0000 C CNN
+F 1 "PMIC-LDO-XC6204B332MR_SOT23-5" H 1950 4495 45  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2000 4625 50  0001 C CNN
+F 3 "" H 1950 4225 50  0001 C CNN
+F 4 "XC6204B332MR" H 1980 4375 20  0001 C CNN "MPN"
+F 5 "310030046" H 1980 4375 20  0001 C CNN "SKU"
+	1    1950 4225
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
